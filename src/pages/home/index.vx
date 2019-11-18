@@ -1,0 +1,107 @@
+<PageHeader title="欢迎使用乐高 Pro">
+  <div x-slot="content">
+    <div>
+      乐高 Pro 在基于项目工程编码研发的基础上同时提供快速的可视化 UI 搭建能力，助力高效研发复杂项目，欢迎使用！
+    </div>
+    <div className="header-doc-links">
+      <div className="header-doc-link"><Icon size="small" type="document" />
+        <a href="https://yuque.antfin-inc.com/limitless/help/ewxk8q" target="_blank">乐高 Pro 文档</a>
+      </div>
+      <div className="header-doc-link"><Icon size="small" type="help" />
+        <a href="https://yuque.antfin-inc.com/recore/docs" target="_blank">Recore 文档</a>
+      </div>
+      <div className="header-doc-link"><Icon size="small" type="employee-search" />
+        <a href="https://yuque.antfin-inc.com/limitless/topics" target="_blank">讨论区</a>
+      </div>
+    </div>
+  </div>
+  <div x-slot="extraContent">
+    <img style={{ width: 289 }} role="presentation" src="https://img.alicdn.com/tfs/TB11jH2i_TI8KJjSsphXXcFppXa-578-256.png" />
+  </div>
+</PageHeader>
+
+<div className="card-content">
+  <Message title="脚手架项目说明" type="notice" style={{ marginBottom: 20 }}>
+    <div style={{ fontSize: 16, lineHeight: '25px' }}>
+      这是一个基于 Recore 解决方案的项目初始化模板，初始化成功后请根据自己的项目需要修改项目内容，
+      包括这个文档。项目模板中为了方便快速开始，内置了 5 个模板页面，分别是首页数据看板、列表页、
+      表单页、卡片页、结果提示页，以及这 5 个模板页面对应的路由和导航配置，仅供项目初期参考，请自行
+      根据项目需要修改或删除。
+    </div>
+  </Message>
+  <Grid gap={15} device={device}>
+    <Box colSpan={2} x-for={indexCards} x-each="item">
+      <DataIndex
+        title={item.title}
+        number={item.number}
+        unit={item.unit}
+        subTitle={item.subTitle}
+        trend={item.trend}
+        trendNumber={item.trendNumber}
+      />
+    </Box>
+    <Box colSpan={6}>
+      <Card title="需求投入分析"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={320}
+      >
+        <DemandChart data={demandData} />
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="战役投入分析"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={320}
+      >
+        <PieChart />
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="业务投入分析"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={320}
+      >
+        <PieChart />
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <VideoCard
+        title="面对新物种 如何做设计？"
+        cover="https://img.alicdn.com/tfs/TB1M4SCjp67gK0jSZPfXXahhFXa-256-144.png"
+        updatedDate="2019-08-10"
+        viewCount={120}
+        favCount={60}
+      />
+    </Box>
+    <Box colSpan={3}>
+      <VideoCard
+        title="历年双11复盘干货"
+        cover="https://img.alicdn.com/tfs/TB1S0Hcjrr1gK0jSZFDXXb9yVXa-680-405.jpg"
+        updatedDate="2019-08-22"
+        viewCount={120}
+        favCount={60}
+      />
+    </Box>
+    <Box colSpan={3}>
+      <VideoCard
+        title="CBU销售大学"
+        cover="https://img.alicdn.com/tfs/TB1ie_djAY2gK0jSZFgXXc5OFXa-308-153.jpg"
+        updatedDate="2019-08-20"
+        viewCount={185}
+        favCount={80}
+      />
+    </Box>
+    <Box colSpan={3}>
+      <VideoCard
+        title="蚂蚁开讲了 MA"
+        cover="https://img.alicdn.com/tfs/TB1pT_ejuL2gK0jSZFmXXc7iXXa-681-474.jpg"
+        updatedDate="2019-08-17"
+        viewCount={165}
+        favCount={40}
+      />
+    </Box>
+  </Grid>
+</div>

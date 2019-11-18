@@ -1,0 +1,30 @@
+<ConfigProvider device={device}>
+  {path === '/login' ? (
+    <Shell
+      logo={{ type: 'ei', link: 'https://go.alibaba-inc.com/' }}
+      name={{ title: '乐高 Pro', link: 'https://go.alibaba-inc.com/' }}
+      nav={{
+        layoutType: 'mix',
+        defaultSelectedKeys: selectedNavKeys,
+        items: [
+          { key: 'home', text: '首页' },
+          { key: 'list', text: '列表' },
+          { key: 'form', text: '表单' },
+          { key: 'card', text: '卡片' },
+          { key: 'result', text: '结果页' },
+        ],
+      }}
+      avatar={{ ssoProvider: 'BUC', ssoAppName: 'legao_app', envMode: 'test' }}
+      launcher={false}
+      onNavChange={onNavChange}
+    >
+      <div className="app-main">
+        <RouterView />
+      </div>
+    </Shell>
+  ) : (
+    <div className="app-main">
+      <RouterView />
+    </div>
+  )}
+</ConfigProvider>

@@ -1,0 +1,52 @@
+.video-card {
+  background-color: #fff;
+
+  i {
+    color: #ccc;
+    margin-right: 5px;
+  }
+
+  .updated-date {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+
+    i{
+      vertical-align: 2px;
+    }
+  }
+
+  .video-cover {
+    position: relative;
+    background-size: cover;
+    height: 150px;
+
+    span {
+      display: block;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      color: #fff;
+    }
+  }
+
+  .extra-info {
+    height: 25px;
+    line-height: 25px;
+    color: #999;
+    overflow: hidden;
+
+    .view-count {
+      margin-left: 10px;
+      width: 40%;
+      float: left;
+    }
+
+    .fav-count {
+      width: 40%;
+      float: right;
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+}

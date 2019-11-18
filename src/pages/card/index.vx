@@ -1,0 +1,125 @@
+<PageHeader title="卡片页">
+  <div x-slot="content">
+    <div>
+      页头内容区，这里可以展示页面的全局表述，文档链接等等。
+      页头内容区，这里可以展示页面的全局表述，文档链接等等。
+      页头内容区，这里可以展示页面的全局表述，文档链接等等。
+      页头内容区，这里可以展示页面的全局表述，文档链接等等。
+      页头内容区，这里可以展示页面的全局表述，文档链接等等。
+      <a href="https://fusion.alibaba-inc.com/deep/component/bizcomps/1529?themeid=97" target="_blank">文档点这里</a>
+    </div>
+  </div>
+</PageHeader>
+
+<div className="card-content">
+  <Grid gap={15} device={device}>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={3}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={6}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={6}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={6}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+    <Box colSpan={6}>
+      <Card title="卡片标题"
+        extra={<Button text>更多</Button>}
+        showTitleBullet={false}
+        contentHeight={180}
+      >
+        <span>Card Content</span>
+      </Card>
+    </Box>
+  </Grid>
+</div>

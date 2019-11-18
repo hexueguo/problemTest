@@ -1,0 +1,57 @@
+.data-index {
+  width: 100%;
+  padding: 20px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #000;
+    padding: 0;
+    margin: 0;
+
+    .unit {
+      font-size: 14px;
+      vertical-align: baseline;
+      color: #999;
+      margin-left: 5px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+    padding: 0;
+    margin: 0;
+
+    span.up {
+      color: #f00;
+
+      i {
+        margin-left: -6px;
+      }
+    }
+
+    span.down {
+      color: #38c55d;
+
+      i {
+        margin-left: -6px;
+      }
+    }
+  }
+}
+

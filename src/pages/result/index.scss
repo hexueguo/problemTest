@@ -1,0 +1,18 @@
+.result-content{
+  box-sizing: border-box;
+  height: calc(100vh - 68px);
+  margin: 20px;
+  padding: 150px 0;
+  background-color: #fff;
+
+  .buttons{
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .result-content {
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,21 @@
+<div className="result-content">
+  <Illustration
+    title={typeTitles[currentType]}
+    type={currentType}
+    size="large"
+    content="我是结果描述，结果类型有下面几种可供选项👇"
+    link="#"
+    linkText="我是提示用户后续操作的链接"
+  />
+  <div className="buttons">
+    <Button.Group size="small">
+      <Button @click={changeType('unkownError')}>未知错误</Button>
+      <Button @click={changeType('serverError')}>服务端错误</Button>
+      <Button @click={changeType('notFound')}>404</Button>
+      <Button @click={changeType('permissionDenied')}>无权限</Button>
+      <Button @click={changeType('empty')}>暂无数据</Button>
+      <Button @click={changeType('completed')}>已完成</Button>
+      <Button @click={changeType('transferred')}>已转交</Button>
+    </Button.Group>
+  </div>
+</div>
